@@ -1,0 +1,67 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    
+}
+/* Fuente */
+.fuente{
+    font-family: 'Fredoka One', cursive;
+  }
+
+
+  /* Preguntas*/
+.tarjeta1{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+ 
+}
+
+
+.tarjeta2{
+    width: 95%;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 1;
+    transform:  rotate(1deg)
+}
+
+.tarjeta3{
+    width: 95%;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 2;
+    transform:  rotate(-1deg)
+}
+
+  /* Preguntas*/
+
+
+
+  
+
+  /* Respuestas */ 
+
+.bordes{
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+    border-radius: 1em;
+    border-bottom: 5px outset;
+}
+
+.bordes div > p{
+
+    font-size: 1.5rem;
+}
+
+
+  /* Respuestas */ 

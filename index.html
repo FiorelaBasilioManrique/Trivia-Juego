@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <title>Preguntas</title>
+    <link rel="icon" href="img/4.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body background  = "img/fondo.jpg" text="white">
+  
+
+<!-- Bienvenida -->
+<div class="container-fluid" id="bienvenida" style="display:block;">
+        <div class="row d-flex align-items-center justify-content-center text-center" style="height:100vh;">
+    
+            <div class="col-sm-12  col-md-8 col-lg-5 text-white">
+                    <h1 class="my-2"><strong>Bienvenido</strong> </h1>
+                    <p class="my-2"><strong>¿Cuál es tu nombre?</strong> </p>
+                    <form class="forma">
+                        
+            
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa Nombre ..">
+                    </div>
+
+                    <button class="btn btn-outline-primary" type="button" id="capturarNombre">Ingresar </button>
+
+                    </form>
+            </div>
+        </div>
+    </div>
+<!-- Bienvenida -->
+
+
+<!-- Menú -->
+
+<div class="container" id="menu" style="display:none;">
+    <div class="row d-flex align-items-center justify-content-center text-center" style="height: 100vh">
+          
+                
+                    <h1 text="center">Hola! Escoge un tema para empezar a jugar </h1>
+                    <div class="col-md-6">
+                    <div class="card" style="width: 100%;border-style: none;">
+                        
+                            <img src="img/1.jpg" class="card-img-top" alt="..." style="height:200px;">
+                            <div class="card-body">
+                              <h5 class="card-title">Historia</h5>
+                              <a href="#" class="btn btn-primary" id="jugar1">Jugar</a>
+                            </div>
+                    </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="card" style="width: 100%;border-style: none;">
+                            <img src="img/2.jpg" class="card-img-top" alt="..." style="height:200px;">
+                            <div class="card-body">
+                              <h5 class="card-title">Entretenimiento</h5>
+                              <a href="#" class="btn btn-primary" id="jugar2">Jugar</a>
+                            </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+<!-- Menú -->
+
+
+
+<!-- Inicio del Titulo -->
+<div class="" style="display:none;" id="titulo">
+    <nav  class="navbar navbar-dark bg-primary d-flex justify-content-between h4 text-white">
+            <div class="d-flex item"><i class="fas fa-globe-americas"></i></div>
+            
+            <div class="d-flex item fuente" id="tipo">GEOGRAFÍA</div>
+            <div class="d-flex item fuente" id="npregunta"> Pregunta 4</div>
+    </nav>
+</div>
+<!-- Fin del Titulo -->
+
+
+
+
+
+<!-- Preguntas -->
+
+    <div class="container" style="display:none;" id="contendor_preguntas">
+        
+        <div class="row justify-content-md-center">
+            <div class="col-sm-12  col-md-8 col-lg-5" >
+               
+                 <!--Tarje 1 -->
+                <div class="card my-3 tarjeta1 shadow-lg">
+                    <div class="card-body" id="preguntas">
+
+
+                    </div>
+                </div>
+                <!--Tarje 2  solo para efecto-->
+                <div class="card my-3 tarjeta2 shadow-lg">
+                        <div class="card-body">
+    
+                            <p class=" py-5 px-5 text-center" >...</p>
+    
+                        </div>
+                    </div>
+                 <!--Tarje 3 solo para efecto-->
+                <div class="card my-3 tarjeta3 ">
+                        <div class="card-body">
+        
+                            <p class=" py-5 px-5 text-center" >...</p>
+        
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Preguntas -->
+
+
+    <!-- Inicio de Respuestas -->
+    <div class="container" id="contenedor_respuestas" style="display:none;">
+        <div class="row justify-content-md-center">
+            <div class="col-md-5" id="respuestas">
+
+            
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Fin de  Respuestas -->
+
+
+
+    <!-- Pantalla final  -->
+       <div class="container" id="final" style="display:none;">
+        <div class="row justify-content-md-center">
+            <div class="col-md-5">
+
+                <div class="card my-5" style="width:100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Resultados del Cuestionario</h5>
+                      <h6 class="card-subtitle mb-2 text-muted" id="jugador">de Ronald</h6>
+                      <p class="card-text text-center display-4 py-5" id="estado">....</p>
+                      <p class="h4" id="cantidad"></p>
+                      <a href="#" class="card-link" id="intentar">Intentar de Nuevo</a>
+                      <a href="#" class="card-link" id="casa">Menú</a>
+                    </div>
+                  </div>
+
+
+            </div>
+        </div>
+    </div>
+   <!-- Pantalla final  -->
+
+    <!-- Mi JS -->
+    <script src="app.js"></script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
